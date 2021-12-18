@@ -1,0 +1,35 @@
+<title>not syncing</title>
+<pre>
+[   0.895739] ---[  end Kernel panic - not syncing: Not working init found. 
+Try passing init= option to kernel.
+</pre>
+<style>
+    *{
+        cursor: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0;
+        padding: 0;
+        color: white;
+        background: black;
+    }
+</style>
+<script>
+let audio = new Audio('./assets/error.mp3')
+audio.loop = true
+document.addEventListener('mouseenter',()=>{
+    audio.play()
+})
+
+document.addEventListener('click',()=>{
+    audio.play()
+})
+
+document.addEventListener('keydown',()=>{
+    audio.play()
+})
+</script>
