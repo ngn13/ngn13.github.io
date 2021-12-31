@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You Are An Idiot!</title>
+</head>
+<body id="bodyEl">
+    <h1 id="title"></h1>
+
+    <style>
+        #title{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 100px;
+        }
+    </style>
+    <script>
+        const title = document.getElementById('title')
+        const body = document.getElementById('bodyEl')
+
+        const music = new Audio('assets/music.mp3')
+
+        let nextAn = 1
+        let indexN = 0
+        let wordlist = ['you', 'are', 'an', 'idiot']
+        let popups = [window]
+
+        function getRandomCordinats(){
+            return [Math.floor(Math.random() * (screen.width-100 - 0) + 0), Math.floor(Math.random() * (screen.height-100 - 0) + 0)]
+        }
+
+        setInterval(()=>{
+            if (popups.length!=0){
+                for (let i = 0; i < popups.length;i++){
+                    let xy = getRandomCordinats()
+                    popups[i].moveTo(xy[0], xy[1])
+                    popups[i].focus()
+                }
+            }
+        }, 50)/*make this lower later*/
+
+        setInterval(()=>{
+            title.textContent = wordlist[indexN]
+            if(nextAn==1){
+                title.style.color = 'black'
+                body.style.backgroundColor = 'white'
+                nextAn = 2
+            }else{
+                title.style.color = 'white'
+                body.style.backgroundColor = 'black'
+                nextAn = 1
+            }
+            if (indexN == 3) {
+                indexN = 0
+            }else{
+                indexN++
+            }
+        }, 400)
+
+        function createNewPopUp(){
+            let newWindow = window.open('index.html','', 'width=350px height=200px')
+            popups.push(newWindow)
+        }
+
+        window.addEventListener('beforeunload', (e)=>{
+            for (let i = 0; i<20; i++){
+                createNewPopUp()
+            }
+
+            e.preventDefault()
+            e.returnValue = ''
+        })
+        
+        window.addEventListener('load', ()=>{
+            let h = window.innerHeight
+            title.style.marginTop = (h/2 - 120).toString() + "px"
+        })
+
+        window.addEventListener('resize', ()=>{
+            let h = window.innerHeight
+            title.style.marginTop = (h/2 - 120).toString() + "px"
+        })
+
+        document.addEventListener('click', ()=>{
+            music.play()
+        })
+
+        document.addEventListener('mouseenter', ()=>{
+            music.play()
+        })
+
+        document.addEventListener('keydown', (e)=>{
+            music.play()
+            for (let i = 0; i<20; i++){
+                createNewPopUp()
+            }
+            e.preventDefault()
+        })
+
+        music.addEventListener('ended', ()=>{
+            music.play()
+        })
+
+        
+    </script>
+</body>
+</html>
