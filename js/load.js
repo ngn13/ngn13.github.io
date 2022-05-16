@@ -24,7 +24,7 @@ See 'systemctl status systemd-modules-load.service' for details.`,
             tempEl = document.createElement('pre')
             tempEl.innerHTML = textList[i]
             texthere.appendChild(tempEl)
-        }, i*1900)
+        }, i*1100)
     }
 }
 
