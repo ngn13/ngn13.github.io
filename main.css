@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+*{
+	list-style: none;
+	margin: 0;
+	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+	background-color: #181818;
+}
+
+/* 
+this header design is not mine, see https://codelikeadev.com/blog/simple-top-navigation-menu-html-css 
+i added some animations and other cool stuff tho
+*/
+
+header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 10px;
+	background-color: #121212;
+	justify-content: space-between;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@keyframes colorAnimation{
+	100%, 0%{
+		color: rgb(255,0,0);
+	}
+	8%{
+		color: rgb(255,127,0);
+	}
+	16%{
+		color: rgb(255,255,0);
+	}
+	25%{
+		color: rgb(127,255,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
+
+}
+
+.logo{
+	padding-left: 15px;
+	animation-name: colorAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li{
+	margin-left: 5px;
+	margin-right: 5px: 
+}
+
+nav ul li a{
+	color: white;
+	display: block;
+	padding: 20px 20px;
+	border-radius: 5px;
+	font-weight: 800;
+}
+
+@keyframes underlineAnimation{
+	100%, 0%{
+		text-decoration-color: rgb(255,0,0);
+	}
+	8%{
+		text-decoration-color: rgb(255,127,0);
+	}
+	16%{
+		text-decoration-color: rgb(255,255,0);
+	}
+	25%{
+		text-decoration-color: rgb(127,255,0);
+	}
+	33%{
+		text-decoration-color: rgb(0,255,0);
+	}
+	41%{
+		text-decoration-color: rgb(0,255,127);
+	}
+	50%{
+		text-decoration-color: rgb(0,255,255);
+	}
+	58%{
+		text-decoration-color: rgb(0,127,255);
+	}
+	66%{
+		text-decoration-color: rgb(0,0,255);
+	}
+	75%{
+		text-decoration-color: rgb(127,0,255);
+	}
+	83%{
+		text-decoration-color: rgb(255,0,255);
+	}
+	91%{
+		text-decoration-color: rgb(255,0,127);
+	}
+
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+	animation-name: underlineAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.logo:hover{
+	animation-play-state: paused;
+}
+
+footer{
+	margin-top: 50px;
+	padding: 0px 10px;
+	background-color: #121212;
+	justify-content: space-between;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+footer p{
+	color:white;
+	padding-top: 70px;
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: 500;
+}
+
+footer p a{
+	color:white;
+}
+
+::-webkit-scrollbar {
+	border-radius: 5px;
+  	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  	background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  	background: #282828;
+}
+
+.underdev{
+	color:white;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.underdev2{
+	text-align: center;
+	color: #181818;
+	margin-top: 3px;
+	margin-left: 150px;
+}

@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Booting...</title>
-    <link rel="stylesheet" href="./css/load.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/icon.jpg">
+	<link rel="stylesheet" href="/home/home.css">
+	<link rel="stylesheet" href="/main.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<title>[ngn]</title>
 </head>
 <body>
-    <div id="texthere">
-        
-    </div>
-    <script src="./js/load.js"></script>
+	<header>
+		<a href="/" class="logo">[ngn]</a>
+		<nav>
+			<ul>
+				<li><a href="/">home</a></li>
+				<li><a href="/blog">blog</a></li>
+				<li><a href="/projects">projects</a></li>
+				<li><a href="/about">about</a></li>
+				<li><a href="/contact">contact</a></li>
+				<li><a href="/donate">donate</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="content">
+		<div class="content-header">
+			<h1>welcome!</h1>
+			<p>
+				hello i am a high school student who is interested in cyber security and programming.<br>
+				i created this website for practicing my skills as well as for some fun!<br>
+				hope you enjoy!<br>
+			</p>
+		</div>
+		<h1>warp to...</h1>
+		<div class="content-warp" id="content-warp">
+			<div class="blog-warp" onclick="location.href='/blog'">
+				<i class='bx bxs-edit'></i>
+				<p>blog</p>
+			</div>
+			<div class="project-warp" onclick="location.href='/projects'">
+				<i class='bx bx-code-alt'></i>
+				<p>projects</p>
+			</div>
+			<div class="contact-warp" onclick="location.href='/contact'">
+				<i class='bx bxs-conversation'></i>
+				<p>contact</p>
+			</div>
+		</div>
+	</div>
+	<script src="/home/home.js"></script>
+	<footer>
+		<p>created by ngn - see <a href="/LICENSE.txt">/LICENSE.txt</a></p>
+	</footer>
 </body>
 </html>
