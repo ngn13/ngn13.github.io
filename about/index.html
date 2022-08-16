@@ -4,10 +4,96 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/main.css">
+	<link rel="stylesheet" href="/about/about.css">
 	<link rel="icon" href="/icon.jpg">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 	<title>[ngn]</title>
 </head>
 <body>
-	<h1 class="underdev">under development...</h1>
+	<header>
+		<a href="/" class="logo">[ngn]</a>
+		<nav>
+			<ul>
+				<li><a href="/">home</a></li>
+				<li><a href="/blog">blog</a></li>
+				<li><a href="/projects">projects</a></li>
+				<li><a href="/about">about</a></li>
+				<li><a href="/contact">contact</a></li>
+				<li><a href="/donate">donate</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="content">
+		<div class="content-header">
+			<h1>about</h1>
+			<p>
+				everything about me i guess
+			</p>
+		</div>
+		<h1>i am learning...</h1>
+		<div class="content-learn">
+			<div class="learning" onclick="window.open('https://en.wikipedia.org/wiki/C%2B%2B')">
+				<i class='bx bxl-c-plus-plus'></i>
+				<p>C++</p>
+			</div>
+			<div class="learning" onclick="window.open('https://en.wikipedia.org/wiki/Python_(programming_language)')">
+				<i class='bx bxl-python' ></i>
+				<p>Python</p>
+			</div>
+			<div class="learning" onclick="window.open('https://dictionary.cambridge.org/tr/images/thumb/trashb_noun_002_38838.jpg?version=5.0.248')">
+				<i class='bx bxl-java'></i>
+				<p>Java</p>
+			</div>
+		</div>
+		<div class="content-learn cl-bottom">
+			<div class="learning" onclick="window.open('https://en.wikipedia.org/wiki/JavaScript')">
+				<i class='bx bxl-javascript' ></i>
+				<p>JavaScript</p>
+			</div>
+			<div class="learning" onclick="window.open('https://en.wikipedia.org/wiki/HTML')">
+				<i class='bx bxl-html5'></i>
+				<p>HTML</p>
+			</div>
+			<div class="learning" onclick="window.open('https://en.wikipedia.org/wiki/CSS')">
+				<i class='bx bxl-css3'></i>
+				<p>CSS</p>
+			</div>
+		</div>
+		<h1>i love...</h1>
+		<div class="content-love">
+			<div class="cybersec" onclick="window.open('https://en.wikipedia.org/wiki/Computer_security')">
+				<p>Cyber security</p>
+			</div>
+			<div class="network" onclick="window.open('https://en.wikipedia.org/wiki/Computer_network')">
+				<p>Networking</p>
+			</div>
+		</div>
+		<h1>i develop...</h1>
+		<div class="content-dev">
+			<div>
+				<i class='bx bxs-bot'></i>
+				<p>Discord bots</p>
+			</div>
+			<div>
+				<i class='bx bxs-plug'></i>
+				<p>Spigot plugins</p>
+			</div>
+			<div>
+				<icons class="webicons">
+					<i class='bx bxl-html5'></i>
+					<i class='bx bxl-css3'></i>
+					<i class='bx bxl-javascript'></i>
+				</icons>
+				<p>Websites</p>
+			</div>
+		</div>
+		<div class="otherdev">
+			<a href="https://github.com/ngn13">And other cool stuff (click)</a>
+		</div>
+	</div>
+	<footer>
+		<p>created by ngn - see <a href="/LICENSE.txt">/LICENSE.txt</a></p>
+	</footer>
+	<script src="/about/about.js"></script>
 </body>
 </html>
