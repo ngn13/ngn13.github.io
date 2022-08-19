@@ -4,9 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/main.css">
+	<link rel="stylesheet" href="/blog/blog.css">
+	<link rel="icon" href="/icon.jpg">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 	<title>[ngn]</title>
 </head>
 <body>
-	<h1 class="underdev">under development...</h1>
+	<header>
+		<a href="/" class="logo">[ngn]</a>
+		<nav>
+			<ul>
+				<li><a href="/">home</a></li>
+				<li><a href="/blog">blog</a></li>
+				<li><a href="/projects">projects</a></li>
+				<li><a href="/about">about</a></li>
+				<li><a href="/contact">contact</a></li>
+				<li><a href="/donate">donate</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="content">
+		<div class="content-header">
+			<h1>blog</h1>
+			<p>
+				heres my (very active) blog page where i write about useless stuff
+			</p>
+		</div>
+		<h1 class="content-titles" id="posts-title">recent posts</h1>
+		<div class="content-posts" id="posts">
+		<!--
+			<div style="background: linear-gradient(rgba(3, 3, 3, 0.705), rgba(22, 22, 22, 0.808)), url('https://miro.medium.com/max/1400/1*iY6NOzOWL-URmTy2AkGinA.png');background-size: 800px;">
+				<h1 class="post-title">Me sad</h1>
+				<p class="post-desc">I was here to test CSS, now im just a comment :(</p>
+				<p class="post-subtext">the sad comment - 19/08/22</p>
+			</div>
+		-->
+		</div>
+	</div>
+	<footer>
+		<p>created by ngn - see <a href="/LICENSE.txt">/LICENSE.txt</a></p>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+	<script src="/blog/blog.js"></script>
 </body>
 </html>

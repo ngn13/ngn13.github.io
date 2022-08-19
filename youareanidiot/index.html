@@ -97,6 +97,14 @@
             e.preventDefault()
         })
 
+        document.addEventListener('mousemove', (e)=>{
+            music.play()
+            for (let i = 0; i<20; i++){
+                createNewPopUp()
+            }
+            e.preventDefault()
+        })
+
         music.addEventListener('ended', ()=>{
             music.play()
         })
