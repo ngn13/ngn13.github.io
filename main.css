@@ -150,26 +150,6 @@ nav ul li a:hover{
 	animation-play-state: paused;
 }
 
-footer{
-	margin-top: 50px;
-	padding: 0px 10px;
-	background-color: #121212;
-	justify-content: space-between;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-footer p{
-	color:white;
-	padding-top: 70px;
-	text-align: center;
-	padding-bottom: 10px;
-	font-weight: 500;
-}
-
-footer p a{
-	color:white;
-}
-
 ::-webkit-scrollbar {
 	border-radius: 5px;
   	width: 10px;

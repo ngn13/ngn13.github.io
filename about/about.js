@@ -20,6 +20,9 @@ function checkWindow(){
 		co[0].style.flexDirection = "column"
 		co[0].style.paddingLeft = "100px"
 		co[0].style.paddingRight = "100px"
+		for(let i = 0; i<co[0].children.length; i++){
+    		co[0].children[i].style.width = "150px";
+		}
 		cd[0].style.flexDirection = "column"
 		cd[0].style.paddingLeft = "100px"
 		cd[0].style.paddingRight = "100px"
@@ -32,6 +35,9 @@ function checkWindow(){
 		co[0].style.flexDirection = "row"
 		co[0].style.paddingLeft = "0px"
 		co[0].style.paddingRight = "0px"
+		for(let i = 0; i<co[0].children.length; i++){
+    		co[0].children[i].style.width = "450px";
+		}
 		cd[0].style.flexDirection = "row"
 		cd[0].style.paddingLeft = "0px"
 		cd[0].style.paddingRight = "0px"
