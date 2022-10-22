@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+	height: 100vh;
+	overflow: hidden;
+}
+
+@keyframes slideDown{
+	0%{
+		height: 10px;
+	}
+	100%{
+		height: 60px;
+	}
+}
+
+.links-header{
+	position: absolute;
+	background: #303030;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	animation-name: slideDown;
+	animation-duration: 1s;
+	height: 60px;
+}
+
+.links-header p{
+	color: #9a9a98;
+	font-size: 30px;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.links-header a{
+	color: #9a9a98;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 900;
+}
+
+.links-header a:hover{
+	color: #b8b8b7;
+}
+
+.recent-pack{
+	height: 100vh;
+	background: linear-gradient(rgba(0.5, 0.5, 0.5, 0.705), rgba(1, 1, 1, 0.308)), url('/mcpacks/images/carbon-lite.png');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.recent-pack div{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.recent-pack h1{
+	color: #9a9a98;
+	font-size: 70px;
+}
+
+.recent-pack h2{
+	color: #575856;
+}
+
+.recent-pack a{
+	margin:0 auto;
+	font-size: 20px;
+	margin-top: 30px;
+	padding: 10px;
+	color: #575856;
+	border: solid 1px #b8b8b7;
+	border-radius: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	width: 300px;
+}
+
+.recent-pack a:hover{
+	background: #b8b8b7;
+	color:#363636;
+}
+
+@keyframes bottomSlide{
+	0%{
+		bottom: -30px;
+	}
+	100%{
+		bottom: 32px;
+	}
+}
+
+.bottom-help{
+	color:#9a9a98;
+	position: absolute;
+	text-align: center;
+   	width: 100%;
+   	font-size: 20px;
+   	animation-name: bottomSlide;
+   	animation-delay: 5s;
+   	animation-duration: 2s;
+   	animation-fill-mode: forwards;  
+   	bottom: -30px;
+}
