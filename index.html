@@ -2,56 +2,248 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="/icon.jpg">
-	<link rel="stylesheet" href="/home/home.css">
-	<link rel="stylesheet" href="/main.css">
-	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-	<meta property="og:title" content="[ngn]" />
+	<!-- epic meta tags start -->
+	<meta property="og:title" content="ngn13" />
+	<meta property="og:description" content="ngn's epic github.io page" />
 	<meta property="og:site_name" content="ngn13.github.io" />
-	<meta property="og:image" content="/icon.jpg" />
-	<meta name="theme-color" content="#e91501" />
-	<title>[ngn]</title>
+	<meta property="og:image" content="/banner.png" />
+	<meta name="theme-color" content="#171A1A" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<!-- epic meta tags end -->
+	<title>ngn13</title>
 </head>
 <body>
-	<header>
-		<a href="/" class="logo">[ngn]</a>
-		<nav>
-			<ul>
-				<li><a href="/">home</a></li>
-				<li><a href="/blog">blog</a></li>
-				<li><a href="/projects">projects</a></li>
-				<li><a href="/about">about</a></li>
-				<li><a href="/contact">contact</a></li>
-				<li><a href="/donate">donate</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="content">
-		<div class="content-header">
-			<h1>welcome!</h1>
-			<p>
-				hello i am a high school student who is interested in cyber security and programming.<br>
-				i created this website for practicing my skills as well as for some fun!<br>
-				hope you enjoy!<br>
-			</p>
-		</div>
-		<h1>warp to...</h1>
-		<div class="content-warp" id="content-warp">
-			<div class="blog-warp" onclick="location.href='/blog'">
-				<i class='bx bxs-edit'></i>
-				<p>blog</p>
-			</div>
-			<div class="project-warp" onclick="location.href='/projects'">
-				<i class='bx bx-code-alt'></i>
-				<p>projects</p>
-			</div>
-			<div class="contact-warp" onclick="location.href='/contact'">
-				<i class='bx bxs-conversation'></i>
-				<p>contact</p>
-			</div>
+
+	<div id="particle"></div>
+	<div class="profile">
+		<img src="https://avatars.githubusercontent.com/u/78868991?v=4">
+		<div>
+			<h1>ngn</h1>
+			<a href="https://ngn13.fun">Website</a>
+			<a href="https://github.com/ngn13">Github</a>
+			<a href="https://tryhackme.com/p/ngn">Tryhackme</a>
 		</div>
 	</div>
-	<script src="/home/home.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script>
+		// I stole the options from a codepen https://codepen.io/gabiet/pen/yLyBweO
+		var options = {"particles":{"number":{"value":99,"density":{"enable":true,"value_area":552.4033491425909}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":3},"image":{"src":"img/github.svg","width":70,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":2,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1.5782952832645452,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":false};
+		particlesJS("particle", options);
+	</script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+@keyframes colorAnimation{
+	100%, 0%{
+		color: rgb(255,0,0);
+	}
+	8%{
+		color: rgb(255,127,0);
+	}
+	16%{
+		color: rgb(255,255,0);
+	}
+	25%{
+		color: rgb(127,255,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
+
+}
+
+
+@keyframes gayShadowAnimation {
+	100%, 0%{
+		box-shadow: rgba(255, 0, 0, 0.07) 0px 1px 2px, rgba(255, 0, 0, 0.07) 0px 2px 4px, rgba(255, 0, 0, 0.07) 0px 4px 8px, rgba(255, 0, 0, 0.07) 0px 8px 16px, rgba(255, 0, 0, 0.07) 0px 16px 32px, rgba(255, 0, 0, 0.07) 0px 32px 64px;
+	}
+	8%{
+		box-shadow: rgba(255, 127, 0, 0.07) 0px 1px 2px, rgba(255, 127, 0, 0.07) 0px 2px 4px, rgba(255, 127, 0, 0.07) 0px 4px 8px, rgba(255, 127, 0, 0.07) 0px 8px 16px, rgba(255, 127, 0, 0.07) 0px 16px 32px, rgba(255, 127, 0, 0.07) 0px 32px 64px;
+	}
+	16%{
+		box-shadow: rgba(255, 255, 0, 0.07) 0px 1px 2px, rgba(255, 255, 0, 0.07) 0px 2px 4px, rgba(255, 255, 0, 0.07) 0px 4px 8px, rgba(255, 255, 0, 0.07) 0px 8px 16px, rgba(255, 255, 0, 0.07) 0px 16px 32px, rgba(255, 255, 0, 0.07) 0px 32px 64px;
+	}
+	25%{
+		box-shadow: rgba(127, 255, 0, 0.07) 0px 1px 2px, rgba(127, 255, 0, 0.07) 0px 2px 4px, rgba(127, 255, 0, 0.07) 0px 4px 8px, rgba(127, 255, 0, 0.07) 0px 8px 16px, rgba(127, 255, 0, 0.07) 0px 16px 32px, rgba(127, 255, 0, 0.07) 0px 32px 64px;
+	}
+	33%{
+		box-shadow: rgba(0, 255, 0, 0.07) 0px 1px 2px, rgba(0, 255, 0, 0.07) 0px 2px 4px, rgba(0, 255, 0, 0.07) 0px 4px 8px, rgba(0, 255, 0, 0.07) 0px 8px 16px, rgba(0, 255, 0, 0.07) 0px 16px 32px, rgba(0, 255, 0, 0.07) 0px 32px 64px;
+	}
+	41%{
+		box-shadow: rgba(0, 255, 127, 0.07) 0px 1px 2px, rgba(0, 255, 127, 0.07) 0px 2px 4px, rgba(0, 255, 127, 0.07) 0px 4px 8px, rgba(0, 255, 127, 0.07) 0px 8px 16px, rgba(0, 255, 127, 0.07) 0px 16px 32px, rgba(0, 255, 127, 0.07) 0px 32px 64px;
+	}
+	50%{
+		box-shadow: rgba(0, 255, 255, 0.07) 0px 1px 2px, rgba(0, 255, 255, 0.07) 0px 2px 4px, rgba(0, 255, 255, 0.07) 0px 4px 8px, rgba(0, 255, 255, 0.07) 0px 8px 16px, rgba(0, 255, 255, 0.07) 0px 16px 32px, rgba(0, 255, 255, 0.07) 0px 32px 64px;
+	}
+	58%{
+		box-shadow: rgba(0, 127, 255, 0.07) 0px 1px 2px, rgba(0, 127, 255, 0.07) 0px 2px 4px, rgba(0, 127, 255, 0.07) 0px 4px 8px, rgba(0, 127, 255, 0.07) 0px 8px 16px, rgba(0, 127, 255, 0.07) 0px 16px 32px, rgba(0, 127, 255, 0.07) 0px 32px 64px;
+	}
+	66%{
+		box-shadow: rgba(0, 0, 255, 0.07) 0px 1px 2px, rgba(0, 0, 255, 0.07) 0px 2px 4px, rgba(0, 0, 255, 0.07) 0px 4px 8px, rgba(0, 0, 255, 0.07) 0px 8px 16px, rgba(0, 0, 255, 0.07) 0px 16px 32px, rgba(0, 0, 255, 0.07) 0px 32px 64px;
+	}
+	75%{
+		box-shadow: rgba(127, 0, 255, 0.07) 0px 1px 2px, rgba(127, 0, 255, 0.07) 0px 2px 4px, rgba(127, 0, 255, 0.07) 0px 4px 8px, rgba(127, 0, 255, 0.07) 0px 8px 16px, rgba(127, 0, 255, 0.07) 0px 16px 32px, rgba(127, 0, 255, 0.07) 0px 32px 64px;
+	}
+	83%{
+		box-shadow: rgba(255, 0, 255, 0.07) 0px 1px 2px, rgba(255, 0, 255, 0.07) 0px 2px 4px, rgba(255, 0, 255, 0.07) 0px 4px 8px, rgba(255, 0, 255, 0.07) 0px 8px 16px, rgba(255, 0, 255, 0.07) 0px 16px 32px, rgba(255, 0, 255, 0.07) 0px 32px 64px;
+	}
+	91%{
+		box-shadow: rgba(255, 0, 127, 0.07) 0px 1px 2px, rgba(255, 0, 127, 0.07) 0px 2px 4px, rgba(255, 0, 127, 0.07) 0px 4px 8px, rgba(255, 0, 127, 0.07) 0px 8px 16px, rgba(255, 0, 127, 0.07) 0px 16px 32px, rgba(255, 0, 127, 0.07) 0px 32px 64px;
+	}
+}
+
+		@keyframes underlineAnimation{
+	100%, 0%{
+		text-decoration-color: rgb(255,0,0);
+	}
+	8%{
+		text-decoration-color: rgb(255,127,0);
+	}
+	16%{
+		text-decoration-color: rgb(255,255,0);
+	}
+	25%{
+		text-decoration-color: rgb(127,255,0);
+	}
+	33%{
+		text-decoration-color: rgb(0,255,0);
+	}
+	41%{
+		text-decoration-color: rgb(0,255,127);
+	}
+	50%{
+		text-decoration-color: rgb(0,255,255);
+	}
+	58%{
+		text-decoration-color: rgb(0,127,255);
+	}
+	66%{
+		text-decoration-color: rgb(0,0,255);
+	}
+	75%{
+		text-decoration-color: rgb(127,0,255);
+	}
+	83%{
+		text-decoration-color: rgb(255,0,255);
+	}
+	91%{
+		text-decoration-color: rgb(255,0,127);
+	}
+
+}
+
+		body{
+			-webkit-touch-callout: none;
+ 		 	-webkit-user-select: none;
+ 		 	-khtml-user-select: none;
+ 		 	-moz-user-select: none;
+ 		 	-ms-user-select: none;
+ 		 	user-select: none;
+			background: #141414;
+			font-family: 'Ubuntu', sans-serif;
+			background: #141414;
+		}
+
+		::-webkit-scrollbar {
+			border-radius: 10px;
+		  width: 10px;
+		}
+		
+		::-webkit-scrollbar-track {
+		  border-radius: 10px;
+		  background: #181818;
+		}
+		
+		::-webkit-scrollbar-thumb {
+		  border-radius: 10px;
+		  background: #282828;
+		}
+
+		#particle {
+  			background-color: black;
+  			position:fixed;
+  			top:0;
+  			right:0;
+  			bottom:0;
+  			left:0;
+  			z-index:0; 
+		}
+
+		.profile {
+			position: absolute;
+			top: 50%;  
+   			left: 50%; 
+   			transform: translate(-50%, -50%); 
+   			background: #18191A;
+   			border-radius: 20px;
+   			padding: 50px;
+   			display: flex;
+			flex-direction: column;
+			gap: 0px;
+			align-items: center;
+			color: white;
+			text-align: center;
+			animation-name: gayShadowAnimation;
+			animation-iteration-count: infinite;
+			animation-duration: 10s;
+		}
+
+		img{
+			border-radius: 75px;
+			width: 150px;
+			height: 150px;
+			margin: 0;
+		}
+
+		.profile div h1{
+			font-size: 70px;
+			margin-top: 10px;
+			margin-bottom: 30px;
+			animation-name: colorAnimation;
+			animation-iteration-count: infinite;
+			animation-duration: 10s;
+		}
+
+		a{
+			text-decoration: none;
+			color: #C5C5C5;
+			margin-left: 5px;
+			font-size: 20px;
+		}
+
+		a:hover{
+			text-decoration: underline;
+			animation-name: underlineAnimation;
+			animation-iteration-count: infinite;
+			animation-duration: 10s;	
+		}
+	</style>
+
 </body>
 </html>
